@@ -1,6 +1,8 @@
 pipeline {
     environment {
         image_name = "kubedoom"
+        DOCKER_HOST = "dindworker"
+        PATH = "$PATH:${WORKSPACE}/bin/docker/"
     }
 
   agent any
